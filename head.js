@@ -6,10 +6,13 @@ let assertEqual = function(actual, expected) {
   }
 };
 
-let head = function (arr){
-  for (i = 0; i <= arr.length; i ++){
+let head = function(arr) {
+  for (let i = 0; i <= arr.length; i ++) {
     return arr[0];
+    //return (arr && arr.length) ? arr[0] : undefined; from LODASH
   }
-}
+};
 assertEqual(head([5,6,7]), 5);
+assertEqual(head([6]), 5);
+assertEqual(head([]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
