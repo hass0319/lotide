@@ -9,11 +9,12 @@ let assertEqual = function(actual, expected) {
 let countLetters = function(sentence) {
   let letterObj = {};
   for (let letter of sentence) {
-    if (letterObj[letter] !== undefined) {
-      letterObj[letter] ++;
-    }// if the key: letter is has not been initialized in the object, 1 is assigned,
-    else {//letterObj[letters] === undefined
-      letterObj[letter] = 1;
+    if (letter !== ' ') {
+      if (letterObj[letter] !== undefined) {
+        letterObj[letter] ++;
+      } else {//letterObj[letters] === undefined
+        letterObj[letter] = 1;
+      }
     }
   }
   return letterObj;
