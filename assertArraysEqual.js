@@ -1,8 +1,3 @@
-// let assertEqual = function(actual, expected) {
-//   actual === expected ?
-//     console.log(`✅ Assertion Passed: ${actual} === ${expected}`)
-//     : console.log(`🛑 Assertion failed: ${actual} !== ${expected}`);
-// };
 
 let eqArrays = (arr1, arr2) => {
   return arr1[0] === arr2[0] ?

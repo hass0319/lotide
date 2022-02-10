@@ -1,9 +1,7 @@
 let assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    return console.log(`🛑 Assertion failed: ${actual} !== ${expected}`);
-  }
+  actual === expected ?
+    console.log(`✅ Assertion Passed: ${actual} === ${expected}`)
+      : console.log(`🛑 Assertion failed: ${actual} !== ${expected}`)
 };
 
 let countLetters = function(sentence) {
