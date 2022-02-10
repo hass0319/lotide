@@ -12,12 +12,12 @@ let assertEqual = function(actual, expected) {
 // };
 let eqArrays = function(arr1, arr2) {
   for (let i = 0; i <= arr1.length; i++) {
-    console.log(`for i arr1 ${arr1}`);
+    //console.log(`for i arr1 ${arr1}`);
     for (let j = 0; j <= arr2.length; j++) {
-      console.log(`for J arr1 ${arr2}`);
-      console.log(`for J arr1[i]: ${arr1}, ${i} === arr2[j]: ${arr2}, ${j}`);
+      //console.log(`for J arr1 ${arr2}`);
+      //console.log(`for J arr1[i]: ${arr1}, ${i} === arr2[j]: ${arr2}, ${j}`);
       if (arr1[i] === arr2[j]) {
-        console.log(`if arr1[i]: ${arr1[i]} === arr2[j]: ${arr2[j]}`);
+        //console.log(`if arr1[i]: ${arr1[i]} === arr2[j]: ${arr2[j]}`);
         return console.log(true);
       } else {
         return console.log(false);
