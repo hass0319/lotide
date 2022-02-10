@@ -45,13 +45,13 @@ console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
 
 //method 1........
 // const middle = function (arr) {
-  // if(arr.length <= 2) {
-  //   return [];
-  //  }
+// if(arr.length <= 2) {
+//   return [];
+//  }
 //    let sliced = [];
-  //  if(arr.length%2!=0){
-  //    let slicer = (arr.length-1)/2;
-  //    //console.log("slicer: "+slicer);
+//  if(arr.length%2!=0){
+//    let slicer = (arr.length-1)/2;
+//    //console.log("slicer: "+slicer);
 
 //      sliced = arr.slice(slicer);
 //      //console.log("sliced: " +sliced)
