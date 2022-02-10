@@ -8,12 +8,13 @@ let assertEqual = function(actual, expected) {
 
 let countLetters = function(sentence) {
   let letterObj = {};
+  let letterArray = [];
   for (let letter of sentence) {
     if (letter !== ' ') {
       if (letterObj[letter] !== undefined) {
         letterObj[letter] ++;
       } else {//letterObj[letters] === undefined
-        letterObj[letter] = 1;
+       letterArray.push(letterObj[letter] = 1);
       }
     }
   }
