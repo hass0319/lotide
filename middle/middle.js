@@ -1,15 +1,6 @@
-let eqArrays = (arr1, arr2) => {
-  return arr1[0] === arr2[0] ?
-    (arr1[1] === arr2[1] ?
-      (arr1[2] === arr2[2] ?
-        true : false) : false) : false;
-};
+let eqArrays = require ('../eqArrays/eqArrays');
 
-let assertArraysEqual = (arr1, arr2) => {
-  eqArrays(arr1, arr2) ?
-    console.log(`✅ Assertion passed: ${arr1} === ${arr2}`)
-    : console.log(`🛑 Assertion failed: ${arr1} !== ${arr2}`);
-};
+const assertArraysEqual = require ('../assertArraysEqual/assertArraysEqual')
 
 const middle = function(arr) {
   let even = [];
@@ -31,16 +22,17 @@ const middle = function(arr) {
   return even;
 };
 
+module.exports = middle;
 // //For arrays with one or two elements, there is no middle. Return an empty array.
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
+// console.log(middle([1])); // => []
+// console.log(middle([1, 2])); // => []
 // //For arrays with ODD number of elements, an array containing a SINGLE middle element should be RETURNED.
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
+// console.log(middle([1, 2, 3])); // => [2]
+// console.log(middle([1, 2, 3, 4, 5])); // => [3]
 
 // //For arrays with an EVEN number of elements, an array containing the TWO elements in the middle should be RETURNED
-console.log(middle([1, 2, 3, 4]));// => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+// console.log(middle([1, 2, 3, 4]));// => [2, 3]
+// console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
 
 
 //method 1........
