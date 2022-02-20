@@ -1,8 +1,4 @@
-let assertEqual = function(actual, expected) {
-  actual === expected ?
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`)
-      : console.log(`🛑 Assertion failed: ${actual} !== ${expected}`)
-};
+const assertEqual = require('./assertEqual');
 
 let countLetters = function(sentence) {
   let letterObj = {};
@@ -12,7 +8,7 @@ let countLetters = function(sentence) {
       if (letterObj[letter] !== undefined) {
         letterObj[letter] ++;
       } else {//letterObj[letters] === undefined
-       letterArray.push(letterObj[letter] = 1);
+        letterArray.push(letterObj[letter] = 1);
       }
     }
   }
