@@ -1,15 +1,5 @@
-let eqArrays = (arr1, arr2) => {
-  return arr1[0] === arr2[0] ?
-    (arr1[1] === arr2[1] ?
-      (arr1[2] === arr2[2] ?
-        true : false) : false) : false;
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
-let assertArraysEqual = (arr1, arr2) => {
-  eqArrays(arr1, arr2) ?
-    console.log(`✅ Assertion passed: ${arr1} === ${arr2}`)
-    : console.log(`🛑 Assertion failed: ${arr1} !== ${arr2}`);
-};
 
 const letterPositions = function(sentence) {
   let results = {};

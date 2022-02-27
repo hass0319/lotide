@@ -1,4 +1,4 @@
-const assertEqual = require('../assertEqual');
+const assertEqual = require('./assertEqual');
 
 let head = (arr) => {
   for (let i = 0; i <= arr.length; i ++) {

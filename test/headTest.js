@@ -7,7 +7,7 @@
 // assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 const assert = require('chai').assert;
-const head   = require('../head/head');
+const head   = require('../head');
 
 describe("#head", () => {
   it("returns 1 for [1, 2, 3]", () => {

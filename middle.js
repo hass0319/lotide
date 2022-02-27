@@ -1,6 +1,3 @@
-// let eqArrays = require('../eqArrays/eqArrays');
-
-// const assertArraysEqual = require('../assertArraysEqual/assertArraysEqual');
 
 const middle = function(arr) {
   let even = [];
@@ -23,6 +20,8 @@ const middle = function(arr) {
 };
 
 module.exports = middle;
+
+
 // //For arrays with one or two elements, there is no middle. Return an empty array.
 // console.log(middle([1])); // => []
 // console.log(middle([1, 2])); // => []

@@ -1,15 +1,14 @@
 const assertEqual = require('./assertEqual');
 
-let countLetters = function(sentence) {
+const countLetters = function(sentence) {
   let letterObj = {};
   let letterArray = [];
   for (let letter of sentence) {
     if (letter !== ' ') {
       if (letterObj[letter] !== undefined) {
         letterObj[letter] ++;
-      } else {//letterObj[letters] === undefined
-        letterArray.push(letterObj[letter] = 1);
-      }
+      } //letterObj[letters] === undefined
+      letterArray.push(letterObj[letter] = 1);
     }
   }
   return letterObj;
@@ -18,3 +17,5 @@ let countLetters = function(sentence) {
 const result1 = countLetters("lighthouse in the house");
 console.log(result1);
 assertEqual(result1.h , 4);
+
+module.exports = countLetters;

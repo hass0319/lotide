@@ -1,4 +1,6 @@
-let string = process.argv.slice(2);
+
+
+const string = process.argv.slice(2);
 function reverseString(string) {
   //string = process.argv;
   let newStr =  "";
@@ -8,5 +10,6 @@ function reverseString(string) {
   //console.log(newStr)
   return newStr;
 }
+module.exports = reverseString;
 //reverseString('goodbye');
 console.log(reverseString());
